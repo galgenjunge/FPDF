@@ -17,8 +17,8 @@
         }
     ],
     "autoload": {
-        "psr-4": {
-            "Galgenjunge\\FPDF\\": "src/"
+        "psr-0": {
+            "Galgenjunge\\FPDF\\": "src/FPDF"
         }
     }
 }
