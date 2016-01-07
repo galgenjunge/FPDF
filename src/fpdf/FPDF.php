@@ -1188,8 +1188,8 @@ protected function _UTF8toUTF16($s)
 		if($c1>=224)
 		{
 			// 3-byte character
-			$c2 = ord($s[$i++]);
-			$c3 = ord($s[$i++]);
+			$c2 = ord(isset($s[$i++])?$s[$i]:null);
+			$c3 = ord(isset($s[$i++])?$s[$i]:null);
 			$res .= chr((($c1 & 0x0F)<<4) + (($c2 & 0x3C)>>2));
 			$res .= chr((($c2 & 0x03)<<6) + ($c3 & 0x3F));
 		}
