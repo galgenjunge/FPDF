@@ -6,7 +6,7 @@
 * Date:    2015-12-20                                                          *
 * Author:  Olivier PLATHEY                                                     *
 *******************************************************************************/
-namespace Galgenjunge\FPDF;
+namespace fpdf;
 
 define('FPDF_VERSION','1.81');
 
