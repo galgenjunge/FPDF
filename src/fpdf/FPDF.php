@@ -1196,7 +1196,7 @@ protected function _UTF8toUTF16($s)
 		elseif($c1>=192)
 		{
 			// 2-byte character
-			$c2 = ord($s[$i++]);
+			$c2 = ord(($i++ < $nb)?$s[$i]:null);
 			$res .= chr(($c1 & 0x1C)>>2);
 			$res .= chr((($c1 & 0x03)<<6) + ($c2 & 0x3F));
 		}
