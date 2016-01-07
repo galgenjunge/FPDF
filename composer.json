@@ -1,24 +1,16 @@
 {
     "name": "galgenjunge/fpdf",
     "version": "dev-master",
-    "homepage": "http://www.fpdf.org",
     "description": "Unofficial PSR-0 compliant version of the FPDF library",
+    "homepage": "http://www.fpdf.org/",
+    "license": "no usage restriction",
     "type": "library",
     "require": {
         "php": ">=5.3.0"
     },
-    "keywords": ["pdf", "fpdf"],
-    "license": "no usage restriction",
-    "authors": [
-        {
-            "name": "Olivier Plathey",
-            "email": "oliver@fpdf.org",
-            "homepage": "http://fpdf.org/"
-        }
-    ],
     "autoload": {
         "psr-0": {
-            "Galgenjunge\\FPDF\\": "src/FPDF"
+            "fpdf": "src/"
         }
     }
 }
